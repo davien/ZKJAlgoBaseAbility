@@ -1,0 +1,6 @@
+framework module Pods_ZKJAlgoBaseAbility_Tests {
+  umbrella header "Pods-ZKJAlgoBaseAbility_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,20 @@
+PODS:
+  - ZKJAlgoBaseAbility (0.1.0):
+    - ZKJAlgoBaseAbility/MSMNN (= 0.1.0)
+    - ZKJAlgoBaseAbility/opencv2 (= 0.1.0)
+  - ZKJAlgoBaseAbility/MSMNN (0.1.0)
+  - ZKJAlgoBaseAbility/opencv2 (0.1.0)
+
+DEPENDENCIES:
+  - ZKJAlgoBaseAbility (from `../`)
+
+EXTERNAL SOURCES:
+  ZKJAlgoBaseAbility:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZKJAlgoBaseAbility: 8e7a8bf947aada56fa6fa37d99f540e5f013bedb
+
+PODFILE CHECKSUM: d533b11012b2f5fc838bd8147a824be635df8907
+
+COCOAPODS: 1.15.2

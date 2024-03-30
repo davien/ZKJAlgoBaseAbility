@@ -1,0 +1,6 @@
+framework module ZKJAlgoBaseAbility {
+  umbrella header "ZKJAlgoBaseAbility-umbrella.h"
+
+  export *
+  module * { export * }
+}

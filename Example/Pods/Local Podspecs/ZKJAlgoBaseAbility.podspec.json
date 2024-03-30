@@ -1,0 +1,35 @@
+{
+  "name": "ZKJAlgoBaseAbility",
+  "version": "0.1.0",
+  "summary": "A short description of ZKJAlgoBaseAbility.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/davien/ZKJAlgoBaseAbility",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "davien": "weiqiang.zhao@msxf.com"
+  },
+  "source": {
+    "git": "https://github.com/davien/ZKJAlgoBaseAbility.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "libraries": [
+    "z",
+    "c++"
+  ],
+  "subspecs": [
+    {
+      "name": "MSMNN",
+      "vendored_frameworks": "Framework/MSMNN.framework"
+    },
+    {
+      "name": "opencv2",
+      "vendored_frameworks": "Framework/opencv2.framework"
+    }
+  ]
+}

@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		513B459989A99E3FCC8DE3AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		513B459989A99E3FCC8DE3AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZKJAlgoBaseAbility_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKJAlgoBaseAbility_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,10 +60,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83FE2E455679A7AB389C9F24 /* Pods_ZKJAlgoBaseAbility_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKJAlgoBaseAbility_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8B170BD0424B5233A26DC830 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8B170BD0424B5233A26DC830 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A1ACFD50D341823BC17180EC /* Pods_ZKJAlgoBaseAbility_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKJAlgoBaseAbility_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB357CBB7605F00AFF93C62 /* Pods-ZKJAlgoBaseAbility_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKJAlgoBaseAbility_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZKJAlgoBaseAbility_Tests/Pods-ZKJAlgoBaseAbility_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D5ABEE68E37443FCC4F7AC81 /* ZKJAlgoBaseAbility.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZKJAlgoBaseAbility.podspec; path = ../ZKJAlgoBaseAbility.podspec; sourceTree = "<group>"; };
+		D5ABEE68E37443FCC4F7AC81 /* ZKJAlgoBaseAbility.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZKJAlgoBaseAbility.podspec; path = ../ZKJAlgoBaseAbility.podspec; sourceTree = "<group>"; };
 		FB2E6B377D50AFBED8D1C72D /* Pods-ZKJAlgoBaseAbility_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKJAlgoBaseAbility_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZKJAlgoBaseAbility_Example/Pods-ZKJAlgoBaseAbility_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FB348CB9F1DBD002EFD48816 /* Pods-ZKJAlgoBaseAbility_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKJAlgoBaseAbility_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZKJAlgoBaseAbility_Tests/Pods-ZKJAlgoBaseAbility_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0C2232AFBE48EF01B037B0 /* Pods-ZKJAlgoBaseAbility_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKJAlgoBaseAbility_Example.release.xcconfig"; path = "Target Support Files/Pods-ZKJAlgoBaseAbility_Example/Pods-ZKJAlgoBaseAbility_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				FB348CB9F1DBD002EFD48816 /* Pods-ZKJAlgoBaseAbility_Tests.debug.xcconfig */,
 				ABB357CBB7605F00AFF93C62 /* Pods-ZKJAlgoBaseAbility_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				E3BEF65267F4C2AF877BE463 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +246,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = davien;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 9QQ8XVAUNR;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -337,24 +340,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3BEF65267F4C2AF877BE463 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZKJAlgoBaseAbility_Example/Pods-ZKJAlgoBaseAbility_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZKJAlgoBaseAbility/ZKJAlgoBaseAbility.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZKJAlgoBaseAbility.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZKJAlgoBaseAbility_Example/Pods-ZKJAlgoBaseAbility_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -494,12 +479,17 @@
 			baseConfigurationReference = FB2E6B377D50AFBED8D1C72D /* Pods-ZKJAlgoBaseAbility_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9QQ8XVAUNR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZKJAlgoBaseAbility/ZKJAlgoBaseAbility-Prefix.pch";
 				INFOPLIST_FILE = "ZKJAlgoBaseAbility/ZKJAlgoBaseAbility-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zkj.demo.--PRODUCT-NAME-rfc1034identifier-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = wildcard_dev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +500,17 @@
 			baseConfigurationReference = FC0C2232AFBE48EF01B037B0 /* Pods-ZKJAlgoBaseAbility_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9QQ8XVAUNR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZKJAlgoBaseAbility/ZKJAlgoBaseAbility-Prefix.pch";
 				INFOPLIST_FILE = "ZKJAlgoBaseAbility/ZKJAlgoBaseAbility-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zkj.demo.--PRODUCT-NAME-rfc1034identifier-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = wildcard_dev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

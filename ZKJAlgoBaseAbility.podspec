@@ -28,9 +28,29 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/davien/ZKJAlgoBaseAbility.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
+  s.libraries  = "z", "c++"
+  
+  s.pod_target_xcconfig = {
+    # 'VALID_ARCHS' => 'arm64',
+    'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7 armv7s arm64'
+  }
+  s.user_target_xcconfig = {
+    # 'VALID_ARCHS' => 'arm64',
+    'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => "armv7 armv7s arm64"
+  }
+  
+  s.subspec 'MSMNN' do |ss|
+    ss.vendored_frameworks = 'Framework/MSMNN.framework'
+  end
+  
+  s.subspec 'opencv2' do |ss|
+    ss.vendored_frameworks = 'Framework/opencv2.framework'
+  end
 
-  s.source_files = 'ZKJAlgoBaseAbility/Classes/**/*'
+  # s.source_files = 'ZKJAlgoBaseAbility/Classes/**/*'
   
   # s.resource_bundles = {
   #   'ZKJAlgoBaseAbility' => ['ZKJAlgoBaseAbility/Assets/*.png']
