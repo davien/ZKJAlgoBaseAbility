@@ -1,6 +1,6 @@
 {
   "name": "ZKJAlgoBaseAbility",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A short description of ZKJAlgoBaseAbility.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/davien/ZKJAlgoBaseAbility",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/davien/ZKJAlgoBaseAbility.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
@@ -22,6 +22,14 @@
     "z",
     "c++"
   ],
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphoneos*]": "armv7 armv7s",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "armv7 armv7s arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphoneos*]": "armv7 armv7s",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "armv7 armv7s arm64"
+  },
   "subspecs": [
     {
       "name": "MSMNN",

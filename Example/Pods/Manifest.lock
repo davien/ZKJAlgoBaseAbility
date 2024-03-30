@@ -1,9 +1,9 @@
 PODS:
-  - ZKJAlgoBaseAbility (0.1.0):
-    - ZKJAlgoBaseAbility/MSMNN (= 0.1.0)
-    - ZKJAlgoBaseAbility/opencv2 (= 0.1.0)
-  - ZKJAlgoBaseAbility/MSMNN (0.1.0)
-  - ZKJAlgoBaseAbility/opencv2 (0.1.0)
+  - ZKJAlgoBaseAbility (0.2.0):
+    - ZKJAlgoBaseAbility/MSMNN (= 0.2.0)
+    - ZKJAlgoBaseAbility/opencv2 (= 0.2.0)
+  - ZKJAlgoBaseAbility/MSMNN (0.2.0)
+  - ZKJAlgoBaseAbility/opencv2 (0.2.0)
 
 DEPENDENCIES:
   - ZKJAlgoBaseAbility (from `../`)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZKJAlgoBaseAbility: 8e7a8bf947aada56fa6fa37d99f540e5f013bedb
+  ZKJAlgoBaseAbility: 5cce71e9c11f9a58725ecc22c79cd4c74969495e
 
 PODFILE CHECKSUM: d533b11012b2f5fc838bd8147a824be635df8907
 
