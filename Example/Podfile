@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ZKJAlgoBaseAbility_Example' do
+  pod 'ZKJAlgoBaseAbility', :path => '../'
+
+  target 'ZKJAlgoBaseAbility_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
